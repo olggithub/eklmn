@@ -19,8 +19,8 @@ masKoef[1,1] = Convert.ToDouble(Console.ReadLine());
     double [] XYPoint(double [,] Koef)
 {
     double [] XY = new double [2];
-    XY[0] = (Koef[1,1] - Koef[0,1])/(Koef[0,0]-Koef[1,0]);
-    XY[1] = XY[0]*Koef[1,0]+Koef[1,1];
+    XY[0] = (Koef[1,1] - Koef[0,1])/(Koef[0,0]-Koef[1,0]);   // x = (b2-b1)/(k1-k2)
+    XY[1] = XY[0]*Koef[1,0]+Koef[1,1];                       // y = k2*x+b2
     return XY;
 }
 
