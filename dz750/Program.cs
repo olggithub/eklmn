@@ -26,7 +26,7 @@ Console.Write($"Введите номер столбца массива: ");
 int nCol = Convert.ToInt32(Console.ReadLine());
 if(nRow<=razmRow & nCol<=razmCol)
 {
-int [,] myArray = new int [5,5];
+int [,] myArray = new int [razmRow,razmCol];
 myArray = CreateIntArray (razmRow,razmCol,1,99);
 for (int m=0; m<razmRow;m++)
 {
