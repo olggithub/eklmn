@@ -10,6 +10,8 @@ Console.Clear();
 Console.Write("Введите значение N: ");
 int x = Convert.ToInt32(Console.ReadLine());
 
+if (x>0)
+{
 int Chisla(int n)
 {
     if (n == 1) 
@@ -23,3 +25,5 @@ int Chisla(int n)
 }
 
 Chisla(x);
+}
+ else Console.WriteLine("Число должно быть больше 0");
